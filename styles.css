@@ -2,19 +2,70 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-}
-
-body {
   background-color: #bf1e2d;
 }
 
+/* Full page container */
 .container {
-  height: 100%;
+  height: 100vh;
   display: flex;
-  justify-content: center; 
+  flex-direction: column;
+}
+
+/* Top section = 75% of viewport height */
+.top {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-img {
-  height: 100%;
+/* Make image scale nicely */
+.top img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* bottom text area */
+.bottom {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+}
+
+/* Main title */
+.text-quiche-big {
+  font-family: "quiche-display";
+  font-size: 8vh;
+  line-height: 1;
+  font-weight: 900;
+   font-style: italic;
+}
+
+/* Sub text */
+.text-monday {
+  font-family: "MondayRoutines";
+  font-size: 6vh;
+  margin-top: 0.5vh;
+}
+
+/* Sub text */
+.text-quiche-small {
+  font-family: "quiche-display";
+  font-size: 4vh;
+  margin-top: 0.5vh;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 30%;
+}
+
+@font-face {
+  font-family: "MondayRoutines";
+  src: url("Monday_Routines.ttf") format("truetype");
 }
