@@ -22,8 +22,9 @@ html, body {
 
 /* Make image scale nicely */
 .top img {
-  max-height: 100%;
-  max-width: 100%;
+  height: clamp(60%, 80vh, 100%);
+  width: auto;
+  object-fit: contain;
   object-fit: contain;
 }
 
@@ -42,24 +43,22 @@ html, body {
 /* Main title */
 .text-quiche-big {
   font-family: "quiche-display";
-  font-size: 8vh;
+  font-size: clamp(3rem, 14vw, 8vh);  
   line-height: 1;
   font-weight: 900;
-   font-style: italic;
+  font-style: italic;
 }
 
 /* Sub text */
 .text-monday {
   font-family: "MondayRoutines";
   font-size: 6vh;
-  margin-top: 0.5vh;
 }
 
 /* Sub text */
 .text-quiche-small {
   font-family: "quiche-display";
   font-size: 4vh;
-  margin-top: 0.5vh;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 30%;
