@@ -22,7 +22,7 @@ html, body {
 
 /* Make image scale nicely */
 .top img {
-  height: clamp(60%, 80vh, 100%);
+  height: clamp(60%, 70vh, 100%);
   width: auto;
   object-fit: contain;
   object-fit: contain;
@@ -33,7 +33,6 @@ html, body {
   height: 25vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
   color: white;
@@ -43,7 +42,7 @@ html, body {
 /* Main title */
 .text-quiche-big {
   font-family: "quiche-display";
-  font-size: clamp(3rem, 14vw, 8vh);  
+  font-size: clamp(3rem, 13vw, 8vh);  
   line-height: 1;
   font-weight: 900;
   font-style: italic;
@@ -52,7 +51,13 @@ html, body {
 /* Sub text */
 .text-monday {
   font-family: "MondayRoutines";
-  font-size: 6vh;
+  /* font-size: 6vh; */
+  font-size: clamp(3rem, 12vw, 6vh);  
+  line-height: .7;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+
 }
 
 /* Sub text */
@@ -67,4 +72,14 @@ html, body {
 @font-face {
   font-family: "MondayRoutines";
   src: url("Monday_Routines.ttf") format("truetype");
+}
+
+.mobile-break {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .mobile-break {
+    display: inline;
+  }
 }
