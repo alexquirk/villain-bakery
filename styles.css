@@ -14,10 +14,12 @@ html, body {
 
 /* Top section = 75% of viewport height */
 .top {
-  height: 75vh;
+  height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2vh;
+
 }
 
 /* Make image scale nicely */
@@ -34,7 +36,6 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   color: white;
   text-align: center;
 }
@@ -67,6 +68,12 @@ html, body {
   font-weight: 400;
   font-style: normal;
   letter-spacing: 30%;
+}
+
+.social-media-icon img {
+  width: 5vh;
+  height: auto;
+  margin-top: 1vh;
 }
 
 @font-face {
