@@ -1,0 +1,139 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #bf1e2d;
+}
+
+/* Full page container */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top section = 75% of viewport height */
+.top {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+
+}
+
+/* Make image scale nicely */
+.top img {
+  height: clamp(60%, 70vh, 100%);
+  width: auto;
+  object-fit: contain;
+  object-fit: contain;
+}
+
+/* bottom text area */
+.bottom {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* Main title */
+.text-quiche-big {
+  font-family: "quiche-display";
+  font-size: clamp(3rem, 13vw, 8vh);  
+  line-height: 1;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Sub text */
+.text-monday {
+  font-family: "MondayRoutines";
+  /* font-size: 6vh; */
+  font-size: clamp(3rem, 12vw, 6vh);  
+  line-height: .7;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+
+}
+
+/* Sub text */
+.text-quiche-small {
+  font-family: "quiche-display";
+  font-size: 3vh;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 15%;
+}
+
+.social-media-icon img {
+  width: 5vh;
+  height: auto;
+  margin-top: 1vh;
+}
+
+@font-face {
+  font-family: "MondayRoutines";
+  src: url("Monday_Routines.ttf") format("truetype");
+}
+
+.mobile-break {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .mobile-break {
+    display: inline;
+  }
+}
+
+@keyframes fadeRise {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-rise {
+  opacity: 0;
+  animation: fadeRise 0.8s ease forwards;
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.25s; }
+.delay-3 { animation-delay: 0.4s; }
+.delay-4 { animation-delay: 0.55s; }
+.delay-5 { animation-delay: 0.7s; }
+
+.preorder-button {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.preorder-button a {
+  display: inline-block;
+  padding: 18px 42px;
+  border: 3px solid #ffffff;
+  border-radius: 40px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "quiche-sans", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.preorder-button a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: translateY(-2px);
+}
