@@ -68,6 +68,8 @@ html, body {
   font-weight: 400;
   font-style: normal;
   letter-spacing: 15%;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 .social-media-icon img {
